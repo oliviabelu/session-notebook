@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anleitung Repository</title>
+  </head>
+  <body>
+    <h1>Anleitung Repository</h1>
+    <h2>Lokales Repository erstellen</h2>
+    <ul>
+      <li>gehe im Terminal zum Ordner der zum Repository werden soll</li>
+      <li>
+        man sollte nie ein Repository innerhalb eines bestehenden Repository
+        erstellen
+      </li>
+      <li>
+        mit <code>git init</code> wird der Ordner als Repository definiert
+      </li>
+      <li>
+        folgende Nachricht sollte erscheinen: <br />
+        <pre><code>Initialized empty Git repository in /Users/your-username/path_to_folder/session-notebook/.git/</code></pre>
+      </li>
+    </ul>
+    <h2>Remote Repository anlegen</h2>
+    <ul>
+      <li>in Github neues Repository anlegen</li>
+      <li>
+        es sollte ein öffentliches Repository sein und den selben Namen wie der
+        lokale Ordner besitzen
+      </li>
+    </ul>
+    <h2>Repository verbinden</h2>
+    <ul>
+      <li>SSH Adresse aus gerade angelegtem remote Repository kopieren</li>
+      <li>
+        diese als remtoe repository "origin" zum lokalen Repository hinzufügen
+        über <code>git remote add origin <i>SSH Adresse</i></code>
+      </li>
+      <li>
+        mit <code>git remote -v</code> überprüfen, ob das Repository erfolgreich
+        verbunden wurde (eine "fetch" und eine "push" Adresse sollten im
+        Terminal angezeigt werden)
+      </li>
+      <li><code>git add .</code> um alle Änderungen zu stagen</li>
+      <li>
+        <code>git commit -m "<i>Beschreibung</i>" um alles zu übergeben</code>
+      </li>
+      <li>
+        <code>git push</code> um alles hochzuladen - beim ersten Mal muss man
+        genau spezifizieren wohin man hochladen will mit
+        <code>git push -u origin main</code>
+      </li>
+    </ul>
+  </body>
+</html>
